@@ -1,0 +1,197 @@
+.citation__background {
+  /* background-image: url("image/background-rick.png");
+  background-size: cover; */
+  background-color:#262C3A;
+}
+
+.name__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.citation__title {
+  padding: 20px;
+  font-family: rick, sans-serif;
+  font-size: 4em;
+  color: #26eb0f;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.citation__title:hover {
+  color: green;
+}
+
+.citation__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.citation__content {
+  position: relative;
+  font-family: kid, sans-serif;
+  width: 50%;
+  padding: 30px;
+  border-radius: 7px;
+  background: beige;
+}
+
+.citation__rigthArrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  top: 60px;
+  left: 100%;
+
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 20px solid beige;
+}
+
+.citation__leftArrow::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  bottom: 60px;
+  right: 100%;
+  
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 20px solid beige;
+}
+
+.citation__sentence {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.words__wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.words__content, .words__random {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.words__random {
+  margin-top: 10px;
+}
+
+.buttonWords {
+  padding: 15px;
+  font-family: verdana;
+  font-size: 1em;
+  border: black;
+  border-radius: 7px;
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonWords:hover {
+  background-color: #26eb0f;
+}
+
+.citation__choice {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #26eb0f;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.citation__label {
+  color: green;
+  font-family: verdana;
+  font-size: 1.2em;
+}
+
+.citation__value {
+  color: darkgreen;
+  font-family: rick, sans-serif;
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+input[type=range].customSlider {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: green;
+}
+
+/* 
+
+  Gestion display none
+
+*/
+
+.js-hidden {
+  display: none;
+}
+
+/* 
+
+  Gestion margin
+
+*/
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.margin-right__button {
+  margin-right: 35px;
+}
+
+/* 
+
+  Gestion fonts
+
+*/
+
+@font-face {
+  font-family: 'rick';
+  src: url('font/get_schwifty.ttf');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'bulle';
+  src: url('font/bd_cartoon.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cartoon';
+  src: url('font/hey_comic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kid';
+  src: url('font/kid_knowledge.otf');
+  font-weight: normal;
+  font-style: normal;
+}

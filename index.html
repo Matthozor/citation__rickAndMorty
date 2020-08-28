@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Citation generator</title>
+  </head>
+  <body class="citation__background">
+    <div class="name__wrapper">
+      <button id="profilMorty" class="citation__title js-elementMorty">Morty Smith</button>
+      <button id="profilRick" class="citation__title js-elementRick">Rick Sanchez</button>
+    </div>
+
+    <div class="citation__choice js-hidden">
+      <input class="customSlider" type="range" id="citation" name="citation" value="1" min="1" max="5" list="sentence">
+      <label class="citation__label" for="citation">Nombre de citation : <span class="citation__value js-citationValue">1</span></label>
+      <div class="words__wrapper js-hidden">
+        <div class="words__random">
+          <button id="buttonRandom" class="buttonWords">Aléatoire</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="citation__wrapper">
+      <div class="personnage__wrapper js-elementMorty">
+        <img src="image/morty.png" alt="">
+      </div>
+      
+      <div class="citation__content">
+        <span class="citation__leftArrow js-elementMorty"></span>
+        <div id="citationRange">
+          <p class="citation__sentence">
+            ...
+          </p>
+        </div>
+        <span class="citation__rigthArrow js-elementRick"></span>
+      </div>
+
+      <div class="personnage__wrapper js-elementRick">
+        <img src="image/rick.png" alt="">
+      </div>
+    </section>
+    <script type="text/javascript" src="citation.js"></script>
+  </body>
+</html>
