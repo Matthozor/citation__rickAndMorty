@@ -1,6 +1,24 @@
+/* 
+
+  Gestion fonts
+
+*/
+
+@font-face {
+  font-family: 'rick';
+  src: url('font/get_schwifty.ttf');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'kid';
+  src: url('font/kid_knowledge.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .citation__background {
-  /* background-image: url("image/background-rick.png");
-  background-size: cover; */
   background-color:#262C3A;
 }
 
@@ -134,10 +152,6 @@ input[type=range].customSlider {
   margin-bottom: 10px;
 }
 
-input[type=range]::-moz-range-thumb {
-  background-color: green;
-}
-
 /* 
 
   Gestion display none
@@ -160,38 +174,4 @@ input[type=range]::-moz-range-thumb {
 
 .margin-right__button {
   margin-right: 35px;
-}
-
-/* 
-
-  Gestion fonts
-
-*/
-
-@font-face {
-  font-family: 'rick';
-  src: url('font/get_schwifty.ttf');
-  font-weight: normal;
-  font-style: normal;
-  }
-
-@font-face {
-  font-family: 'bulle';
-  src: url('font/bd_cartoon.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'cartoon';
-  src: url('font/hey_comic.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'kid';
-  src: url('font/kid_knowledge.otf');
-  font-weight: normal;
-  font-style: normal;
 }

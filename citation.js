@@ -1,8 +1,5 @@
 class Citation {
   constructor() {
-      this.currentIndex1 = 0;
-      this.currentIndex2 = 0;
-      this.currentIndex3 = 0;
 
       this.rangeSelector = document.getElementById("citation");
       this.rangeActive = document.querySelector(".js-citationValue");
